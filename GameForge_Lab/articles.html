@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="dark">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Trois articles sur le développement de jeux vidéo avec Godot, le level design et l'intelligence artificielle dans les jeux vidéo.">
+    <meta name="author" content="Christopher et Fabien">
+    <meta name="copyright" content="Christopher et Fabien">
+    <meta name="robots" content="index, folow">
+    <title>Gameforgelab - Article</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header>
+    <div class="logo-container">
+        <a href="index.html"><img src="images/logo.webp" alt="Logo de Gameforgelab" class="logo"></a>
+        <h1>Gameforge<br>Lab</h1>
+    </div>
+    
+</header>
+<nav id="main-nav">
+  <ul class="nav-list" >
+      <li><a href="index.html" data-key="Home" class="nav-btn">Accueil</a></li>
+      <li><a href="articles.html" data-key="Articles" class="nav-btn">Articles</a></li>
+      <li><a href="multimedia.html" data-key="Multimedia" class="nav-btn">Multimedia</a></li>
+      <li><a href="contact.html" data-key="Contact" class="nav-btn">Contact</a></li>
+      <button type="button" id="theme-toggle" data-key="Change theme">Changer de thème</button>
+      <div id="language-switch">
+          <img src="images/fr.png" alt="Français" data-lang="fr">
+          <img src="images/gb.png" alt="English" data-lang="en">
+        </div>
+  </ul>
+</nav>
+
+
+    <!-- page article -->
+    <main id="main-articles">
+
+      <h1 id="titre" data-key="Articles">Articles</h1>
+      <div class="search-container">
+        <input type="text" id="searchInput" placeholder="Rechercher un article...">
+      </div>
+      <div id="articles">
+
+        <article class="article">
+          <h2 data-key="article-1">1 - Créer son premier jeu avec Godot : guide pour débutants</h2>
+          <div class="collapsible">
+          <section>
+            <p data-key="article-1-1">Vous rêvez de créer votre propre jeu vidéo, mais vous ne savez pas par où commencer ? Le moteur <strong>Godot Engine</strong>, open source, gratuit et léger, est l’outil idéal pour débuter sans se ruiner ni se noyer dans la complexité. Dans cet article, nous vous guidons pas à pas dans la création d’un mini-jeu 2D.</p>
+          </section>
+
+          <section>
+            <h3 data-key="article-1-2">1. Installation de Godot</h3>
+            <ul>
+              <li data-key="article-1-2-1">Téléchargez Godot sur <a href="https://godotengine.org/">godotengine.org</a></li>
+              <li data-key="article-1-2-2">Lancez l’exécutable (aucune installation nécessaire).</li>
+              <li data-key="article-1-2-3">Créez un nouveau projet.</li>
+            </ul>
+          </section>
+
+          <section>
+            <h3 data-key="article-1-3">2. Création de la scène principale</h3>
+            <p data-key="article-1-3-1">Ajoutez un nœud <code>Node2D</code> et renommez-le “Main”. Ajoutez ensuite un <code>Sprite2D</code> et un <code>CollisionShape2D</code> pour le joueur.</p>
+          </section>
+
+          <section>
+            <h3 data-key="article-1-4">3. Importer un personnage</h3>
+            <p data-key="article-1-4-1">Faites glisser une image PNG dans le projet et liez-la au <code>Sprite2D</code>.</p>
+          </section>
+          <section>
+            <h3 data-key="article-1-5">4. Ajouter des obstacles et des collisions</h3>
+            <p data-key="article-1-5-1">Ajoutez des <code>StaticBody2D</code> avec des <code>CollisionShape2D</code> pour les murs.</p>
+          </section>
+
+          <section>
+            <h3 data-key="article-1-6">Conclusion</h3>
+            <p data-key="article-1-6-1">Avec quelques nœuds et lignes de code, vous avez un prototype jouable ! Godot rend le développement de jeux accessible à tous. Le plus dur, c’est de se lancer !</p>
+          </section>
+          </div>
+
+          <button type="button" class="toggle-button" onclick="toggleArticle(this)" data-key="afficher-plus">Afficher plus</button>
+
+        </article>
+        <article class="article">
+          <h2 data-key="article-2">2 - Level Design – 5 erreurs à éviter quand on débute</h2>
+
+          <div class="collapsible">
+          <section>
+            <p data-key="article-2-1">Un bon level design peut transformer un jeu moyen en une expérience mémorable. Voici cinq erreurs fréquentes et comment les éviter.</p>
+          </section>
+
+          <section>
+            <h3 data-key="article-2-2">1. Niveaux trop longs ou trop vides</h3>
+            <p data-key="article-2-2-1">Concevez vos niveaux comme des montagnes russes avec des pics et des pauses.</p>
+          </section>
+
+          <section>
+            <h3 data-key="article-2-3">2. Absence de feedback visuel</h3>
+            <p data-key="article-2-3-1">Ajoutez des effets visuels et sonores pour guider le joueur.</p>
+          </section>
+
+          <section>
+            <h3 data-key="article-2-4">3. Mauvaise signalisation des objectifs</h3>
+            <p data-key="article-2-4-1">Utilisez des indices visuels pour orienter le joueur (flèches, lumière, ennemis).</p>
+          </section>
+
+          <section>
+            <h3 data-key="article-2-5">4. Difficulté mal dosée</h3>
+            <p data-key="article-2-5-1">Adoptez une courbe de difficulté progressive et testez votre niveau avec des joueurs.</p>
+          </section>
+
+          <section>
+            <h3 data-key="article-2-6">5. Copier des idées sans comprendre</h3>
+            <p data-key="article-2-6-1">Analysez les mécaniques et le rythme des jeux célèbres avant de les reproduire.</p>
+          </section>
+
+          <section>
+            <h3 data-key="article-2-7">Conclusion</h3>
+            <p data-key="article-2-7-1">Le level design est un art qui s’apprend avec du temps et des tests. Évitez ces pièges pour offrir une meilleure expérience.</p>
+          </section>
+          </div>
+
+          <button type="button" class="toggle-button" onclick="toggleArticle(this)" data-key="afficher-plus">Afficher plus</button>
+        </article>
+        <article class="article">
+          <h2 data-key="article-3">3 -  L'IA dans les jeux vidéo : comment ça marche vraiment ?</h2>
+          <div class="collapsible">
+          <section>
+            <p data-key="article-3-1">L’IA dans les jeux est souvent simple mais bien pensée. Voici les techniques les plus utilisées dans l’industrie.</p>
+          </section>
+
+          <section>
+            <h3 data-key="article-3-2">1. États finis (Finite State Machines)</h3>
+            <p data-key="article-3-2-1">Exemple : Patrouille → Alerte → Attaque selon les conditions du jeu.</p>
+          </section>
+
+          <section>
+            <h3 data-key="article-3-3">2. Navigation et Pathfinding</h3>
+            <p data-key="article-3-3-1">Les IA utilisent des algorithmes comme <code>A*</code> et des systèmes comme <code>NavMesh</code>.</p>
+          </section>
+
+          <section>
+            <h3 data-key="article-3-4">3. Réactions simples mais efficaces</h3>
+            <p data-key="article-3-4-1">Des comportements simples comme dans DOOM suffisent à créer de la tension et du fun.</p>
+          </section>
+
+          <section>
+            <h3 data-key="article-3-5">4. Scripting comportemental</h3>
+            <p data-key="article-3-5-1">Les <em>Behavior Trees</em> permettent de structurer les actions d’un ennemi.</p>
+          </section>
+
+          <section>
+            <h3 data-key="article-3-6">5. Bonus : Simulation ou illusion ?</h3>
+            <p data-key="article-3-6-1">Le but n’est pas de simuler une vraie intelligence, mais de créer l’illusion pour le joueur.</p>
+          </section>
+
+          <section>
+            <h3 data-key="article-3-7">Conclusion</h3>
+            <p data-key="article-3-7-1" >Avec quelques principes simples, on peut créer des IA convaincantes qui enrichissent l’expérience de jeu.</p>
+          </section>
+          </div>
+          <button type="button" class="toggle-button" onclick="toggleArticle(this)" data-key="afficher-plus">Afficher plus</button>
+        </article>
+      </div>
+      </main>
+
+      <footer>
+        <p data-key="footer"> &copy; Gameforgelab - Tous droits reservés</p>
+    </footer>
+
+    <button type="button" id="scrollToTopBtn" data-key="scrollToTopBtn" aria-label="Revenir en haut de la page">Revenir en haut</button>
+
+    <script src="js/script-article.js"></script>
+    <script src="js/script-light.js" defer></script>
+    <script src="js/script-translate.js" defer></script>
+</body>
+</html>

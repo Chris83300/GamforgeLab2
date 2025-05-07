@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="dark">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Gameforgelab est un site sur la création de jeux vidéos">
+    <meta name="author" content="Christopher et Fabien">
+    <meta name="copyright" content="Christopher et Fabien">
+    <meta name="robots" content="index, follow">
+    <title>Gameforgelab</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+<body data-page="index">
+    <header>
+        <div class="logo-container">
+            <a href="index.html"><img src="images/logo.webp" alt="Logo du site Gameforgelab" class="logo"></a>
+            <h1>Gameforge<br>Lab</h1>
+        </div>
+    </header>
+    <nav id="main-nav">
+        <ul class="nav-list" >
+            <li><a href="index.html" data-key="Home" class="nav-btn">Accueil</a></li>
+            <li><a href="articles.html" data-key="Articles" class="nav-btn">Articles</a></li>
+            <li><a href="multimedia.html" data-key="Multimedia" class="nav-btn">Multimedia</a></li>
+            <li><a href="contact.html" data-key="Contact" class="nav-btn">Contact</a></li>
+            <button type="button" id="theme-toggle" data-key="Change theme" aria-label="Changer le thème clair/sombre">Changer de thème</button>
+            <div type="button" id="language-switch">
+                <img src="images/fr.png" alt="Français" data-lang="fr" aria-label="Changer la langue en français">
+                <img src="images/gb.png" alt="English" data-lang="en" aria-label="Switch language to English">
+            </div>
+        </ul>
+    </nav>
+
+    <main>
+
+        <h2 id="titre" data-key="title-index">Bienvenue sur GameforgeLab</h2>
+        <button type="button" id="changer-titre" data-key="Change title" aria-label="Changer le titre principal">Changer titre</button>
+
+        <div id="conteneur">
+        <p data-key="paragraphe-index">
+            Votre espace d’apprentissage et de création dédié à la conception de jeux vidéo
+
+            Que vous soyez tout juste initié à l’univers du game design ou déjà engagé dans un parcours de formation avec plusieurs projets à votre actif, ce site a été pensé pour vous. Conçu comme une plateforme d’accompagnement pédagogique et créatif, GameforgeLab s’adresse à tous les passionnés de jeux vidéo souhaitant apprendre, expérimenter et progresser dans les différents domaines de la conception vidéoludique.
+            La création d’un jeu vidéo, c’est bien plus que de simples lignes de code ou des graphismes attrayants. C’est un processus complexe, multidisciplinaire, qui mobilise l’imagination, la logique, l’organisation et la capacité à collaborer. C’est pourquoi notre site se donne pour mission de vous offrir un environnement structuré, accessible et stimulant, pour explorer chaque aspect de cette industrie passionnante. Une approche centrée sur la pratique
+            Apprendre à concevoir un jeu vidéo, ce n’est pas seulement comprendre des théories : c’est faire, tester, échouer parfois, et surtout recommencer. C’est pourquoi nous mettons un point d’honneur à favoriser l’apprentissage par la pratique. À travers des ateliers, des défis créatifs et des projets guidés, vous serez amené à mettre en œuvre vos idées, à manipuler les outils, et à affiner votre compréhension de ce qui fait un bon jeu.
+            Notre objectif est de faire de vous des concepteurs capables de penser un jeu dans sa globalité : depuis son intention initiale jusqu’à sa réalisation concrète et sa mise à disposition d’un public. Que vous soyez attiré par le level design, le gameplay, la narration interactive, l’UX, l’équilibrage ou encore la conception sonore, vous trouverez sur ce site de quoi nourrir votre curiosité et développer vos compétences.
+            Une communauté d’apprenants et de créateurs
+            Le monde du jeu vidéo est avant tout un espace de partage et de collaboration. GameforgeLab ne se limite pas à une bibliothèque de ressources : c’est aussi une communauté bienveillante, ouverte à l’échange et à l’entraide. Forums, commentaires, projets collaboratifs… Vous pourrez interagir avec d’autres apprenants, poser vos questions, montrer vos prototypes, recevoir des retours constructifs et tisser des liens avec des personnes qui partagent votre passion.
+            En résumé, GameforgeLab est bien plus qu’un simple site web : c’est une porte d’entrée vers l’univers foisonnant et créatif de la conception vidéoludique. Quel que soit votre point de départ, vous trouverez ici des clés pour progresser, des outils pour créer, et une communauté pour vous soutenir.
+            Prêt à entrer dans le monde des créateurs de jeux ? Alors bienvenue, et bon voyage dans cette aventure ludique et formatrice !
+        </p>
+        </div>
+
+        <div id="bouton-ajouter">
+        <button type="button" id="ajouter-paragraphe" data-key="ajouter-paragraphe" aria-label="Ajouter un paragraphe">Ajouter paragraphe</button>
+        </div>
+
+
+        <h2 id="titre-galerie" data-key="titre-galerie">Galerie d'images</h2>
+        <section id="galerie-images">
+        <img class="box" src="images/programmation.jpg" alt="image d'une personne en train de programmer">
+        <img class="box2" src="images/manette.jpg" alt="image d'une personne tenant une manette">
+        <img class="box3" src="images/programmation2.jpg" alt="image d'une personne en train de programmer">
+        </section>
+    </main>
+
+
+    <footer>
+        <p data-key="footer"> &copy; Gameforgelab - Tous droits reservés</p>
+    </footer>
+
+    <button type="button" id="scrollToTopBtn" data-key="scrollToTopBtn" aria-label="Revenir en haut de la page">Revenir en haut</button>
+
+    <script src="js/script-intex.js"></script>
+
+    <script src="js/script-light.js" defer></script>
+    <script src="js/script-translate.js"></script>
+</body>
+</html>
